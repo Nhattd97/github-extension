@@ -7,7 +7,7 @@ import "react-chat-widget/lib/styles.css";
 
 class Main extends React.Component {
   componentDidMount() {
-    addResponseMessage("Welcome to this awesome chat!");
+    addResponseMessage("Tao la Nhat");
   }
 
   handleNewUserMessage = newMessage => {
@@ -25,6 +25,5 @@ class Main extends React.Component {
 }
 
 const app = document.createElement("div");
-app.id = "my-extension-root";
 document.body.appendChild(app);
 ReactDOM.render(<Main />, app);
