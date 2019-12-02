@@ -2,8 +2,13 @@
   "name": "My Extension",
   "version": "1.0",
   "manifest_version": 2,
-  "browser_action": {
-      "default_popup": "index.html"
-  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "css": ["/static/css/5.css", "/static/css/main.css", "/static/css/content.css"],
+      "js": ["/static/js/0.js", "/static/js/5.js", "/static/js/content.js", "/static/js/runtime-content.js"],
+      "run_at": "document_end"
+    }
+  ],
   "content_security_policy": "script-src 'self' 'sha256-JqGx/i3xJtxbvNeYmdViyxZ78pz+3arj0Dsisk2p1x4='; object-src 'self'"
 }
