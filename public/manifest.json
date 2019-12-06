@@ -5,8 +5,8 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
-      "css": ["/static/css/5.css", "/static/css/main.css", "/static/css/content.css"],
-      "js": ["/static/js/0.js", "/static/js/5.js", "/static/js/content.js", "/static/js/runtime-content.js"],
+      "css": ["/static/css/modules.css"],
+      "js": ["/static/js/modules.js", "/static/js/content.js", "/static/js/runtime-content.js"],
       "run_at": "document_end"
     }
   ],
